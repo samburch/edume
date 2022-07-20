@@ -47,7 +47,7 @@ The following commands are intended for a mac user. The project assumes that you
    ```
 2. Navigate to project folder
    ```sh
-   cd eduweb
+   cd edume
    ```
 3. Navigate to server folder and install package dependancies
    ```sh
@@ -74,7 +74,7 @@ The following commands are intended for a mac user. The project assumes that you
 5. Open a new terminal winow and navigate to client
 6. Navigate to project folder and install package dependancies
    ```sh
-   cd eduweb
+   cd edume
    ```
    ```sh
    cd client
