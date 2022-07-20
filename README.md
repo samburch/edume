@@ -39,10 +39,6 @@ I used the following libraries
 
 The following commands are intended for a mac user. The project assumes that you have the latest version of `npm` and `git` installed globally in order to clone and run the project successfully.
 
-### Prerequisites
-
-The following commands are for a mac user. The project assumes that you have the latest version of npm and git installed globally in order to clone and run the project successfully.
-
 ### Installation
 
 1. Clone the repo
