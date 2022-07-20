@@ -1,0 +1,86 @@
+[
+  {
+    "value": 1,
+    "symbol": 1,
+    "text": ".?",
+    "className": ""
+  },
+  {
+    "value": 2,
+    "symbol": 2,
+    "text": "abc",
+    "className": ""
+  },
+  {
+    "value": 3,
+    "symbol": 3,
+    "text": "def",
+    "className": ""
+  },
+  {
+    "value": "delete",
+    "symbol": "&#8592",
+    "text": "Delete",
+    "className": "delete"
+  },
+  {
+    "value": 4,
+    "symbol": 4,
+    "text": "ghi",
+    "className": ""
+  },
+  {
+    "value": 5,
+    "symbol": 5,
+    "text": "jkl",
+    "className": ""
+  },
+  {
+    "value": 6,
+    "symbol": 6,
+    "text": "mno",
+    "className": ""
+  },
+  {
+    "value": "return",
+    "symbol": "&#9166",
+    "text": "Enter",
+    "className": "enter"
+  },
+  {
+    "value": 7,
+    "symbol": 7,
+    "text": "pqrs",
+    "className": ""
+  },
+  {
+    "value": 8,
+    "symbol": 8,
+    "text": "tuv",
+    "className": ""
+  },
+  {
+    "value": 9,
+    "symbol": 9,
+    "text": "wxyz",
+    "className": ""
+  },
+  {
+    "value": "*",
+    "symbol": "*",
+    "text": "",
+    "className": "bottom-left-key"
+  },
+  {
+    "value": 0,
+    "symbol": 0,
+    "text": "_",
+    "className": ""
+  },
+  {
+    "value": "#",
+    "symbol": "#",
+    "text": "",
+    "className": ""
+  }
+]
