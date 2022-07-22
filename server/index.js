@@ -14,7 +14,7 @@ app.get("/keys", async (req, res) => {
     });
   }
 
-  await res.status(200).json(keypad(request));``
+  res.status(200).json(keypad(request));``
 });
 
 app.get("/keys/words", async (req, res) => {
@@ -26,7 +26,7 @@ app.get("/keys/words", async (req, res) => {
     });
   }
 
-  await res.status(200).json(wordmatch(request));
+  res.status(200).json(wordmatch(request));
 });
 
 app.listen(port, () => {
