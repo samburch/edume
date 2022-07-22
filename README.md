@@ -17,7 +17,7 @@
 
 For this project I followed the brief to create a T9 keypad.
 
-The project contains both a server folder for all api requests to keys and matched words and a client folder for the react front end.
+The project contains both a server folder for all api requests to keys and matched words. The client folder for the react front end.
 
 The application can match 3000 common english language words based on the users submission.
 
@@ -125,14 +125,12 @@ You can remove any keys and matched words by pressing the delete key. To clear t
 ## Ommissions
 
 - I am not familiar with `Redux` and so I have not included it within this project
-- Typically I would use `Tailwind` for personal projects becuase I like the speed and ease of use to build prototypes. For this projected I opted to write all my css from scratch to demonstrate ability
+- Typically I would use `Tailwind` for personal projects becuase I like the speed and ease of use to build prototypes. For this project I opted to write all my css from scratch to demonstrate my ability
 
 <!-- ISSUES -->
 ## Known issues
 
-1. Using more than 2000 combinations wont return any matched words to the phone UI but will return the keys, i.e. `2637422` should return `america`. I believe a callback function is needed.
-2. The project initalises with 1 combination wihtout the user having added anything to the keyboard UI
-3. Pressing the return button without making any entries returns an axios error
+1. Using more than 2000 combinations wont return any matched words to the phone UI but will return the keys, i.e. `2637422` should return `america`. I believe a callback function is needed
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
