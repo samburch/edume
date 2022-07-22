@@ -15,6 +15,7 @@ module.exports = [
   "academic",
   "accept",
   "access",
+  "america",
   "accident",
   "accompany",
   "accomplish",
