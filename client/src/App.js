@@ -37,6 +37,7 @@ function App() {
         },
       })
       .then((response) => {
+        if (response.data.length === 0) return;
         setCombinations(response.data);
       })
       .catch((error) => {
@@ -67,7 +68,6 @@ function App() {
       case "return":
         if (numbers.length === 0) return;
         return setUserkeys([...numbers]);
-
       default:
         setUserkeys(event.currentTarget.value);
         return setNumbers([...numbers, event.currentTarget.value]);
@@ -142,14 +142,14 @@ function App() {
             <b>Matching words:</b> {wordmatches.words.length}
           </h3>
           <h3>
-            <b>T9 combination:</b> {combinations.combinations.length}
+            <b>T9 combinations:</b> {combinations.combinations.length}
           </h3>
           {combinations.combinations.length === 0 || undefined ? (
             <p></p>
           ) : (
             <ul>
               <h3>
-                <b>T9 combinations:</b>
+                <b>T9 strings:</b>
               </h3>
               {combinations.combinations.map((match, i) => (
                 <li key={i}>{match}</li>
