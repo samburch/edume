@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   const [userkeys, setUserkeys] = useState("0"); // Stores key press state for use in keys request parameters
-  const [numbers, setNumbers] = useState([]); // Stores keypad numbers as sate corresponding to which keys have been pressed
+  const [numbers, setNumbers] = useState([]); // Stores keypad numbers as state corresponding to which keys have been pressed
   const [combinations, setCombinations] = useState({ combinations: [] }); // Stores word combination state for matched key pad strings
   const [wordmatches, setWordmatches] = useState({ words: [] }); // Stores matched words state from initial request
   const [message, setMessage] = useState(""); // Stores text message state on phone screen
@@ -69,7 +69,7 @@ function App() {
         if (numbers.length === 0) return;
         return setUserkeys([...numbers]);
       default:
-        setUserkeys(event.currentTarget.value);
+        setUserkeys([...numbers, event.currentTarget.value]);
         return setNumbers([...numbers, event.currentTarget.value]);
     }
   };
@@ -129,27 +129,29 @@ function App() {
                 <li>Select matching word that appears create a message</li>
                 <li>Select delete "&#8592;" to clear number and t9 key matches</li>
               </ol>
-              <small><sup>*</sup>note: only use keypad ui and not keypresses to use the keypad</small>
+              <small>
+                <sup>*</sup>note: only use keypad ui and not keypresses to use the keypad
+              </small>
             </div>
           <h4>
-            <b>Example words</b>
+            Example words
           </h4>
           <p className="notes">
             4663: "good", "home" <br /> 2253: "bake", "cake", "able" <br />{" "}
             27753: "apple" <br /> 6666: "moon" <br /> 333363: "defend"
           </p>
           <h3>
-            <b>Matching words:</b> {wordmatches.words.length}
+            Matching words: {wordmatches.words.length}
           </h3>
           <h3>
-            <b>T9 combinations:</b> {combinations.combinations.length}
+            T9 combinations: {combinations.combinations.length}
           </h3>
           {combinations.combinations.length === 0 || undefined ? (
             <p></p>
           ) : (
             <ul>
               <h3>
-                <b>T9 strings:</b>
+                T9 strings:
               </h3>
               {combinations.combinations.map((match, i) => (
                 <li key={i}>{match}</li>
