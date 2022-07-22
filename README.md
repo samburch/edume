@@ -130,7 +130,7 @@ You can remove any keys and matched words by pressing the delete key. To clear t
 <!-- ISSUES -->
 ## Known issues
 
-1. Using more than 2000 combinations wont return any matched words to the phone UI but will return the keys, i.e. `2637422` should return `america`. I believe a callback function is needed
+1. Using more than 2000 combinations wont return any matched words to the phone UI but will return the keys, i.e. `2637422` should return `america`. This is due to the get request being too long due to the number of combination parameters and being rejected.
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
