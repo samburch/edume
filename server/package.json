@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node build/index.html",
-    "client": "node index",
     "dev": "nodemon index"
   },
   "keywords": [],
