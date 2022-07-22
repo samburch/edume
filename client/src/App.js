@@ -65,8 +65,9 @@ function App() {
         setWordmatches({ words: [] });
         return setNumbers([]);
       case "return":
-        if (userkeys === 0) return
+        if (numbers.length === 0) return;
         return setUserkeys([...numbers]);
+
       default:
         setUserkeys(event.currentTarget.value);
         return setNumbers([...numbers, event.currentTarget.value]);
